@@ -3,7 +3,7 @@
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
     url("../fonts/Montserrat-Bold.woff") format("woff");
   font-display: swap;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -56,22 +56,25 @@ h1 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
-  line-height: 94px;
+  font-size: 40px;
+  line-height: 49px;
   margin: 0;
-  color: #ffffff;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  color: $blue;
 }
 
 h2 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
   margin: 0;
-  font-size: 36px;
-  line-height: 51px;
-  color: #ffffff;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
 }
 
 a {
@@ -87,7 +90,7 @@ a {
 
 p {
   margin: 0;
-  color: #ffffff;
+  color: $black;
 }
 
 button {
