@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/FiraSans-Bold.woff2") format("woff2"), url("../fonts/FiraSans-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../fonts/FiraSans-Light.woff2") format("woff2"), url("../fonts/FiraSans-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  background: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+body.hidden {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden; }
+
+h1 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 0.07em;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff; }
+
+a {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  list-style: none;
+  color: #484848;
+  outline: none; }
+
+p {
+  margin: 0;
+  color: #ffffff; }
+
+button {
+  outline: none; }
+  button:hover {
+    color: black; }
+
+span {
+  margin: 0; }
+
+input::-ms-clear {
+  display: none; }
+
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 2; }
+
+.main-nav__container {
+  width: 100%;
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 32px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  z-index: 50; }
+
+.main-nav__bg-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 906px;
+  background-position-y: -15px;
+  padding-bottom: 244px;
+  -webkit-mask-box-image: url("../img/mask.png");
+          mask-border: url("../img/mask.png"); }
+
+.main-nav__bg-girl {
+  position: relative;
+  bottom: -154px;
+  left: 8px;
+  z-index: 2; }
+
+.main-nav__bg-container {
+  width: 100%;
+  max-width: 1020px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/israel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 143px;
+  background-position-x: -15px;
+  background-size: contain;
+  z-index: 1;
+  padding: 0 20px; }
+
+.main-nav__bg-text {
+  z-index: 5;
+  width: 343px;
+  position: relative;
+  top: -82px;
+  left: 13px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center; }
+
+.main-nav__bg-scroll {
+  position: relative;
+  z-index: 20; }
+
+.main-nav__bg-point {
+  position: absolute;
+  top: -60px;
+  left: -32px; }
+
+.main-nav__feedback {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #484848;
+  font-variant: small-caps;
+  border-bottom: 2px dashed #484848; }
+
+.main-nav__phone {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px; }
+
+@media (max-width: 767px) {
+  .main-nav__bg-block {
+    background: url("../img/bgbg.png"); } }

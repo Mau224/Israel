@@ -1,0 +1,115 @@
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.main-nav__container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding-top: 32px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  z-index: 50;
+}
+
+
+.main-nav__bg-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 906px;
+  background-position-y: -15px;
+  padding-bottom: 244px;
+  mask-border: url("../img/mask.png");
+}
+
+
+.main-nav__bg-girl {
+  position: relative;
+  bottom: -154px;
+  left: 8px;
+  z-index: 2;
+}
+
+.main-nav__bg-container {
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/israel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 143px;
+  background-position-x: -15px;
+  background-size: contain;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+
+.main-nav__bg-text {
+  z-index: 5;
+  width: 343px;
+  position: relative;
+  top: -82px;
+  left: 13px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.main-nav__bg-scroll {
+  position: relative;
+  z-index: 20;
+}
+
+.main-nav__bg-point {
+  position: absolute;
+  top: -60px;
+  left: -32px;
+}
+
+.main-nav__feedback {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: $black;
+
+  font-variant: small-caps;
+  border-bottom: 2px dashed $black;
+}
+
+
+.main-nav__phone {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+@media (max-width: $mobile-width) {
+  .main-nav__bg-block {
+    background: url("../img/bgbg.png");
+  }
+}
