@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"),
+    url("../fonts/Raleway-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Fira Sans";
   src: url("../fonts/FiraSans-Regular.woff2") format("woff2"),
     url("../fonts/FiraSans-Regular.woff") format("woff");
@@ -59,7 +68,7 @@ h1 {
   font-size: 40px;
   line-height: 49px;
   margin: 0;
-  letter-spacing: 0.07em;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: $blue;
 }
@@ -73,7 +82,7 @@ h2 {
   margin: 0;
 
   letter-spacing: -0.02em;
-  text-transform: uppercase;
+  text-transform: none;
   color: $blue;
 }
 
@@ -94,6 +103,8 @@ p {
 }
 
 button {
+  text-transform: none;
+  font-weight: normal;
   outline: none;
 
   &:hover {

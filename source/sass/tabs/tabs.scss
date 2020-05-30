@@ -12,23 +12,36 @@
   background: url("../img/sketch_Bg.png");
   background-repeat: no-repeat;
   background-position: top right;
+  background-position-y: 20px;
   padding-top: 56px;
-  margin-bottom: 74px;
+  margin-bottom: 50px;
 }
 
 .tabs__container {
   width: 100%;
-  max-width: 900px;
+  max-width: 942px;
   margin: 0 auto;
   padding: 0 7px;
 }
 
 .tabs__item-text {
-  color: $black;
-  padding-right: 20px;
+  padding-right: 19px;
+  font-family: $fontfamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 170%;
+  color: rgba(72, 72, 72, 0.87);
+  margin-left: -1px;
+
+  &--second {
+    margin-top: 19px;
+    max-width: 505px;
+  }
 }
 
 .tabs__item-title {
+  font-family: $fonttitle;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -36,6 +49,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 24px;
   color: $blue;
+  text-transform: none;
 }
 
 .tabs__item {
@@ -46,49 +60,51 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 40px;
+  line-height: 49px;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
   /* identical to box height */
-  margin-bottom: 94px;
+  margin-bottom: 66px;
+  margin-top: 13px;
 }
 
 .tabs__block {
   width: 100%;
-  max-width: 923px;
+  max-width: 940px;
   display: flex;
   margin: 0 auto;
 }
 
 
 .tabs__nav-icon {
-  fill: $gradient;
+  fill: #000000;
   margin-right: 21px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 }
 
 
 .tabs__nav-text {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 15px;
+  line-height: 18px;
   font-variant: small-caps;
   color: $black;
   cursor: pointer;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 }
 
 
 .tabs__nav {
-  margin-right: 20px;
+  margin-top: -7px;
 }
 
 .tabs__items {
   width: 100%;
-  max-width: 600px;
-  margin-left: 20px;
+  max-width: 637px;
+  margin-top: 13px;
 }
 
 .tabs__navitem {
@@ -96,8 +112,9 @@
   position: relative;
   align-items: center;
   width: 228px;
-  height: 80px;
+  height: 70px;
   //margin-left: 26px;
+  margin-bottom: 3px;
 }
 
 .tab__navitem.active .tabs__nav-text {
@@ -111,5 +128,117 @@
 .tab__navitem.active {
   background: url("../img/bg-tab.svg");
   background-repeat: no-repeat;
+  background-position-y: 1px;
+  background-position-x: -8px;
   width: 228px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .tabs__items {
+    margin-left: 0;
+  }
+
+  .tabs__nav {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .tabs__title {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tabs__block {
+    flex-direction: column;
+  }
+
+  .tabs__nav {
+    display: flex;
+    overflow-x: scroll;
+    margin: 0;
+    margin-bottom: -20px;
+  }
+
+  .tabs__item {
+    margin-left: 10px;
+  }
+
+  .tabs__nav-wrapper {
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .tab__navitem.active {
+    background: $gradient;
+    border-radius: 50px;
+    margin-right: -7px;
+  }
+
+  .tabs__nav-icon {
+    margin-bottom: 10px;
+  }
+
+  .tabs__nav-text {
+    position: relative;
+    right: 10px;
+    top: -6px;
+    font-family: $fontfamily;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(72, 72, 72, 0.87);
+  }
+
+  .tabs__nav-text.active {
+    right: 13px;
+  }
+
+  .tabs__navitem {
+    margin-bottom: 20px;
+    height: auto;
+    padding-top: 11px;
+    padding-right: 12px;
+  }
+
+  .tabs {
+    background: url("../img/sketch_Bg-mob.png");
+    background-repeat: no-repeat;
+    background-position-y: 123px;
+    /* background-position-x: 66px; */
+    background-position: right;
+  }
+
+  .tabs__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-left: -11px;
+    margin-bottom: 12px;
+  }
+
+  .tabs__item-text {
+    font-size: 14px;
+    line-height: 160%;
+    font-style: normal;
+    font-weight: normal;
+    //max-width: 285px;
+
+    &--second {
+      margin-top: 15px;
+    }
+  }
+
+  .tabs__item-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 18px;
+  }
 }

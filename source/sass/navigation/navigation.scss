@@ -1,24 +1,36 @@
 .navigation__container {
   width: 100%;
+  max-width: 1237px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+}
+
+.navigation__wrapper {
+  width: 100%;
   background: url("../img/stamp.png");
   background-repeat: no-repeat;
   background-position: right;
+  background-position-y: 215px;
 }
 
+
 .navigation {
+  width: 100%;
   background: url("../img/watercolor_Bg2.png");
   background-repeat: no-repeat;
   background-position: right;
-  padding-bottom: 200px;
+  padding-bottom: 154px;
+  background-position-x: 58px;
+  background-position-y: -170px;
+  padding-top: 25px;
 }
 
 
 .navigation__list {
   list-style: none;
   /* Black */
-
+  padding-left: 40px;
   border-left: 1px dashed rgba(72, 72, 72, 0.2);
 }
 
@@ -35,14 +47,14 @@
 
 .navigation__price {
   width: 100%;
-  max-width: 480px;
+  max-width: 446px;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 170%;
   color: #484848;
   opacity: 0.87;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
 }
 
 .navigation__title {
@@ -52,89 +64,114 @@
 .navigation__img-block {
   width: 100%;
   max-width: 700px;
-  height: 707px;
-  background: url("../img/nav-img.png");
-  background-repeat: no-repeat;
+}
+
+.navigation__img {
+  width: 100%;
+  max-width: 588px;
+  height: 100%;
+  margin-left: 10px;
 }
 
 .navigation__block {
   width: 100%;
   max-width: 540px;
-  margin-left: 25px;
+  margin-top: 37px;
 }
 
 
 .navigation__item {
   position: relative;
-  margin-bottom: 51px;
+  margin-bottom: 56px;
+  font-size: 15px;
+  line-height: 140%;
+  margin-left: 5px;
+
+  &--second {
+    margin-bottom: 48px;
+  }
+
+  &--four {
+    margin-bottom: 49px;
+    max-width: 400px;
+  }
+
+  &--third {
+    margin-bottom: 41px;
+    max-width: 409px;
+  }
 
   &--first::before {
     content: "1";
     position: absolute;
-    width: 28px;
-    height: 36px;
-    color: $yellow;
+    width: 24px;
+    height: 30px;
+    color: #ffc341;
     font-weight: bold;
     font-size: 17px;
     line-height: 170%;
-    padding-left: 17px;
-    padding-top: 10px;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 3px;
     left: -62px;
     top: -13px;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
   }
 
   &--second::before {
     content: "2";
     position: absolute;
-    width: 28px;
-    height: 36px;
-    color: $yellow;
+    width: 24px;
+    height: 30px;
+    color: #ffc341;
     font-weight: bold;
     font-size: 17px;
     line-height: 170%;
-    padding-left: 17px;
-    padding-top: 10px;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 3px;
     left: -62px;
-    top: -13px;
+    top: -11px;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
   }
 
   &--third::before {
     content: "3";
     position: absolute;
-    width: 28px;
-    height: 36px;
-    color: $yellow;
+    width: 24px;
+    height: 30px;
+    color: #ffc341;
     font-weight: bold;
     font-size: 17px;
     line-height: 170%;
-    padding-left: 17px;
-    padding-top: 10px;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 3px;
     left: -62px;
-    top: -6px;
+    top: -3px;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
   }
 
   &--four::before {
     content: "4";
     position: absolute;
-    width: 28px;
-    height: 36px;
-    color: $yellow;
+    width: 24px;
+    height: 30px;
+    color: #ffc341;
     font-weight: bold;
     font-size: 17px;
     line-height: 170%;
-    padding-left: 17px;
-    padding-top: 10px;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 3px;
     left: -62px;
-    top: -6px;
+    top: -8px;
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
@@ -147,6 +184,126 @@
   max-width: 540px;
   color: $black;
   opacity: 0.5;
-  border-left: 4px solid $yellow;
+  //border-left: 4px solid $yellow;
   padding-left: 14px;
+  position: relative;
+  font-size: 15px;
+  line-height: 140%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 42px;
+    left: -5px;
+    background: $gradient;
+  }
+}
+
+
+@media (max-width: 1183px) {
+  .navigation__block {
+    margin-left: 50px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .navigation__img-block {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .navigation__block {
+    margin-left: 20px;
+  }
+
+  .navigation__title {
+    font-size: 32px;
+    line-height: 39px;
+    margin-left: 20px;
+  }
+
+  .navigation__info {
+    font-size: 14px;
+    line-height: 160%;
+    width: 100%;
+    max-width: 288px;
+    margin-left: -4px;
+    margin-bottom: 23px;
+  }
+
+  .navigation__item {
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 27px;
+    margin-left: 0px;
+
+    &--first {
+      margin-bottom: 60px;
+    }
+
+    &--second {
+      margin-bottom: 37px;
+    }
+
+    &--third {
+      margin-bottom: 26px;
+    }
+
+    &--first::before {
+      left: -54px;
+      top: -9px;
+    }
+
+    &--second::before {
+      left: -54px;
+      top: 2px;
+    }
+
+    &--third::before {
+      left: -54px;
+      top: 13px;
+    }
+
+    &--four::before {
+      left: -54px;
+      top: 14px;
+    }
+  }
+
+  .navigation__price {
+    font-family: $fontfamily;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: -4px;
+    max-width: 296px;
+    margin-bottom: 33px;
+  }
+
+  .navigation {
+    background: none;
+    padding-bottom: 79px;
+  }
+
+  .navigation__wrapper {
+    background: url("../img/stamp-mob.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 312px;
+  }
+
+  .navigation__footer {
+    font-size: 14px;
+    line-height: 160%;
+    width: 100%;
+    max-width: 280px;
+    margin-left: -11px;
+
+    &::before {
+      height: 85px;
+      left: 0;
+    }
+  }
 }

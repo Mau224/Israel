@@ -1,9 +1,20 @@
-<svg width="36" height="35" viewBox="0 0 36 35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="36" height="35" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="scale(0.0277778 0.0285714)"/>
-</pattern>
-<image id="image0" width="36" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAADhklEQVRYhcWXXYgWVRjHf7tZSOmu0UZYWJZZedFFISpBYrCGXngZLF7sWtBNXsV2YUJCdpGVfWwhhBIIkVYWdKMhkSwKfSJ9LBjIWoh9LKUkLUjGtr8u5hn27OvMuzPvu0t/eDgz5zzP//nPmWfOOdOh0ibmATvjegcw0Rab2o49qp51Cmejr2XOVgPXqCcSIXvCcpwInzkXtFTdmyT+Wu1NxnujL8feiJkTQduSRL+rW5r4blH/SPy3zaagR9TTCfkL6oIKcQvCN8fp4GpZ0Er1WEJ4UF1RZ/rDVkRsjmPBXVnQYnUoIfhe3dCCkEbbGFw5hiJXU0GD6uUIuKhunQUhjbY1uI1cg0WCNqonE/Wvqt01knSqHTX8uyNHjpOhAdTdycAhtafmE29Wf1U/a2G2etQPkvy7O4HzycJ9PbCk4iK/AfgKeAdYDHzTwkaxBFiU3J/Pld6vHkmUvq8uL3mqe2I8x+fqQzVnZnkDx5HQcEVRb1ZHw+my+qJ6XYzdpL6ekJxRB2oK6Q7O/MMZjZylXxlmxbkvSfyb+orZ6qw6rj5pvSJGfUz9K+HdV8RRFrwpgn5wOo7XFIH6sPpFwjES7aYi/86SYrsx2kFgZdL/ILAHuKNCwS4DDgJHgdXAp8CdwK6GHNNQJiiHwEhcHwe+BJ4AzgDPAgsLYhaSHdhGgT7gF6Af6I24G8Kvo46gvP8asqUA4BNgDbA97ndEgoEkbiD6non7p8lm5e0C7lqC/k6uJ6O9OdrngduBA2TTvh84HLY/+g6Ez64GrrIcUygpxFVReK+pt8X1GwV+a9XhpGCHo69ZkR8O31VF42VBneqY+o/ZJ14mKLfHw2b64pYF11jkqCwItS+C80XspQoJm9lV6nfB1VfmNxPJe8nreLkNMUvNthjNtoxS3ypkHwXRRfUptauGkC6z806OQzPFVCG9z+mYVN9S+9W7zI4Q88N6oq8/fCaTuO1VHqKKoHVB+K66U53wSlwKa8SE+qZ6dxUxKvNK1oginCJbgYeAdcB64F6yM02+eJ4LGyFbSIeBCzVyVBL0Z7Rd0V4APgzLcW20l+okL8QMU7hIPRrTP6Y+UHXqW7WZHD4OMT9H+68Fvy6zac12+26yc/M54FbgObK9b33br6UJmgmaH+1PZBvstw39c4JmRZ0fD9aS7eKr4/7q/0vQOPAjcAtTZ55xslc4Z/gPID+hqYhSLi0AAAAASUVORK5CYII="/>
-</defs>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="36.000000pt" height="35.000000pt" viewBox="0 0 36.000000 35.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,35.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M87 295 l-89 -52 31 -22 c23 -17 31 -30 31 -53 0 -16 8 -43 17 -59
+14 -24 15 -33 5 -49 -21 -34 -15 -60 13 -60 28 0 34 25 14 61 -10 19 -8 20 34
+14 90 -14 157 24 157 89 0 27 7 39 31 57 l31 21 -92 54 c-51 30 -93 54 -94 53
+0 0 -41 -25 -89 -54z m168 -12 c36 -21 65 -40 65 -43 0 -7 -130 -80 -144 -80
+-6 0 -22 9 -36 19 l-24 19 37 18 c20 10 37 21 37 26 0 12 -6 10 -51 -13 -35
+-17 -45 -19 -70 -9 -16 7 -29 15 -29 19 0 9 122 80 138 81 7 0 42 -17 77 -37z
+m-165 -125 c0 -25 -3 -29 -10 -18 -13 20 -13 50 0 50 6 0 10 -15 10 -32z m200
+13 c0 -53 -71 -91 -144 -77 -30 6 -34 11 -38 41 -5 40 -1 42 41 18 30 -18 32
+-18 78 9 57 33 63 34 63 9z m-185 -141 c3 -5 1 -10 -4 -10 -6 0 -11 5 -11 10
+0 6 2 10 4 10 3 0 8 -4 11 -10z"/>
+</g>
 </svg>

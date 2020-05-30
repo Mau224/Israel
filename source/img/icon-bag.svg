@@ -1,9 +1,18 @@
-<svg width="32" height="25" viewBox="0 0 32 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="32" height="25" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="scale(0.03125 0.04)"/>
-</pattern>
-<image id="image0" width="32" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAACKklEQVRIic2WO2uUQRSGn91svCUpRNAIsfBSBYKKgkYtREHipRD0B+gP0FKwEWy8VUH8BYKVYBfBwiBo4RLcFIqKQkAwKCoRDNHNbjaPxczq55I1k5gNvnCYy3c45+WdM3M+VBKsR32oltXqPFZRS2p/SuycSgIeAwdSHDOYBHqAb39zyicG2xfH3UBuHusEpoCulMCFOPYBJ2KARqzOzI9G39km8fJAWybONeB9E9+nwHBOPQI8SGHbApzLqSMEaZ8Bz4E1LU5aJtTGIaCC+sqAg4k3YilsbcxpHpiOzKabcl561HPV8kA1Li4DW5YheRcwGOdl1KJ/4qq6sQWyd6rn1U+ZXF9RR+LiY+ZDRb2tnozntdikq9TD6i31cyb+hDqrTubUUWAHcAxYEY9ie0ayKeAJUATeAGPAB8JLVwUE2gm3ZwOwFdgM9AN7414d48AV4BHwAqihjkZWAxnmx6MCE86NmqEvlNUf/u4Rc6GqDqlnoiKo3fVvhQy7jsx8KFoHsB/YBewBNkV12oCVTYrsJfCO8K6UCH3kS4PPul+zjAKnEs/1UvS/byjW9epg3LuXGKN3LgVS8T2OO4GbhBroi3u1hQZbDIFhYAboBk43fLu7HARKQC+hJgoEBQBeE25KywkAvI32z0j9IWkZ/gsC7XE+vox5x+JYKBAeFYCzhG642LpIxQywrb7IqReA6y1O2gx3CsANwlUaIDSUBT8mC0SeoEIRuPgTccLXkgGjCnIAAAAASUVORK5CYII="/>
-</defs>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="32.000000pt" height="25.000000pt" viewBox="0 0 32.000000 25.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,25.000000) scale(0.100000,-0.100000)" stroke="none">
+<path d="M90 231 c-7 -13 -23 -21 -48 -23 l-37 -3 -3 -91 c-2 -69 1 -94 12
+-103 9 -8 58 -11 157 -9 l144 3 0 100 0 100 -37 3 c-25 2 -41 10 -48 23 -9 15
+-22 19 -70 19 -48 0 -61 -4 -70 -19z m120 -11 c0 -5 -22 -10 -50 -10 -27 0
+-50 5 -50 10 0 6 23 10 50 10 28 0 50 -4 50 -10z m88 -42 c-14 -43 -181 -60
+-245 -25 -18 10 -33 22 -33 27 0 6 56 10 141 10 108 0 140 -3 137 -12z m-210
+-59 c23 -6 42 -17 42 -25 0 -18 56 -19 67 -1 4 8 22 19 38 24 17 6 38 14 48
+18 15 6 17 0 17 -54 l0 -62 -137 3 -138 3 -3 59 c-2 45 0 57 10 53 7 -3 32
+-11 56 -18z"/>
+</g>
 </svg>

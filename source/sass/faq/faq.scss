@@ -1,0 +1,344 @@
+.faq__block {
+  width: 100%;
+  max-width: 560px;
+  margin-left: 95px;
+}
+
+
+.faq {
+  background: url("../img/watercolor_Bg4.png");
+  background-repeat: no-repeat;
+  //background-position-x: 230px;
+}
+
+.faq__block-item {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+
+  &::before {
+    content: "1";
+    position: absolute;
+    width: 13px;
+    height: 48px;
+    top: 6px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 170%;
+    color: $yellow;
+  }
+
+  &--second::before {
+    content: "2";
+  }
+
+  &--third::before {
+    content: "3";
+  }
+
+  &--four::before {
+    content: "4";
+  }
+
+  &--five::before {
+    content: "5";
+  }
+
+  &--six::before {
+    content: "6";
+  }
+}
+
+.faq__item-title::before,
+.faq__item-title::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #1fc0fc;
+  position: absolute;
+  top: 30px;
+  transition: all 0.3s ease 0s;
+}
+
+.faq__item-title::before {
+  transform: rotate(-40deg);
+  right: -11px;
+}
+
+.faq__item-title::after {
+  transform: rotate(40deg);
+  right: -2px;
+}
+
+
+.faq__item-title.active::before {
+  transform: rotate(40deg);
+}
+
+.faq__item-title.active::after {
+  transform: rotate(-40deg);
+}
+
+
+.faq__item-title {
+  //text-transform: uppercase;
+  position: relative;
+  padding: 18px 0px 32px 30px;
+  cursor: pointer;
+  max-width: 480px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+
+  &--five {
+    max-width: 455px;
+    padding-bottom: 21px;
+  }
+
+  &--six {
+    max-width: 373px;
+    padding-bottom: 21px;
+    padding-left: 29px;
+    padding-top: 19px;
+  }
+
+  &--five::before {
+    right: -38px;
+  }
+
+  &--five::after {
+    right: -30px;
+  }
+
+  &--six::before {
+    right: -120px;
+  }
+
+  &--six::after {
+    right: -112px;
+  }
+}
+
+.faq__item-text {
+  width: 100%;
+  max-width: 480px;
+  display: none;
+  padding: 0 0 30px 0px;
+  margin-top: -5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+}
+
+
+.faq__img-block {
+  max-width: 645px;
+  width: 100%;
+}
+
+
+.faq__container {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.faq__wrapper {
+  width: 100%;
+  background: url("../img/bag.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-position-y: 743px;
+  padding-bottom: 130px;
+}
+
+.faq__title {
+  margin-bottom: 27px;
+  margin-top: 22px;
+  margin-left: 51px;
+}
+
+.faq__img {
+  width: 100%;
+  max-width: 645px;
+  height: 803px;
+  margin-top: 20px;
+  margin-left: 14px;
+}
+
+@media (max-width: 1250px) {
+  .faq__block-item {
+    max-width: 420px;
+
+    &::before {
+      top: 8px;
+    }
+  }
+
+  .faq__title {
+    font-size: 35px;
+  }
+
+  .faq__item-text {
+    max-width: 388px;
+  }
+
+  .faq__block {
+    max-width: 420px;
+    margin-left: 25px;
+  }
+
+  .faq__img {
+    max-width: 500px;
+  }
+
+  .faq__img-block {
+    max-width: 500px;
+  }
+
+  .faq__item-title {
+    padding: 21px 0 29px 30px;
+    max-width: 374px;
+
+    &::before {
+      right: -7px;
+      top: 29px;
+    }
+
+    &::after {
+      right: 0;
+      top: 29px;
+    }
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .faq__img-block {
+    display: none;
+  }
+
+  .faq__wrapper {
+    background-position-y: 589px;
+  }
+
+  .faq__container {
+    background: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq__title {
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-left: 0;
+    padding-bottom: 15px;
+  }
+
+
+  .faq__block {
+    margin: 0;
+    max-width: 320px;
+    padding: 0 10px;
+  }
+
+  .faq__item-title::after {
+    right: -26px;
+    top: 30px;
+  }
+
+  .faq__item-title::before {
+    right: -33px;
+    top: 30px;
+  }
+
+  .faq__item-title {
+    font-size: 16px;
+    line-height: 160%;
+    width: 100%;
+    max-width: 232px;
+    padding: 0;
+    padding-top: 16px;
+    padding-left: 30px;
+    padding-bottom: 24px;
+
+    &--six {
+      max-width: 184px;
+    }
+
+    &--six::before {
+      right: -81px;
+      top: 26px;
+    }
+
+    &--six::after {
+      right: -73px;
+      top: 25px;
+    }
+
+    &--second::before {
+      right: -35px;
+      top: 20px;
+    }
+
+    &--second::after {
+      right: -26px;
+      top: 20px;
+    }
+
+    &--second {
+      padding-top: 7px;
+      padding-bottom: 24px;
+    }
+
+    &--third {
+      padding-top: 21px;
+    }
+  }
+
+  .faq__item-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    max-width: 288px;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-left: 7px;
+  }
+
+  .faq {
+    background: none;
+  }
+
+  .faq__block-item::before {
+    top: -2px;
+    left: 7px;
+  }
+
+  .faq__block-item {
+    &--five::before {
+      top: 5px;
+    }
+
+    &--third::before {
+      top: 5px;
+    }
+  }
+
+  .faq__wrapper {
+    background-position-y: 676px;
+    padding-bottom: 69px;
+  }
+}

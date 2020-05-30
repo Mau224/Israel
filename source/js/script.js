@@ -1,7 +1,14 @@
 'use strict';
 
+$(document).ready(function () {
+  $('body').children().each(function() {
+    document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
+  });
+})
+
 $(function () {
-  $('#phone').mask('+ (999)9–999–9999');
+  $('#phone').mask('+7 (999)9–999–9999');
+  $('#tel').mask('+7 (999) 99_____');
 });
 
 $('body').on('click', '.tab__navitem', function (event) {
@@ -17,4 +24,14 @@ $('body').on('click', '.tab__navitem', function (event) {
       $(this).closest('.tab').find('.slick-slider').slick('setPosition');
     }
   }
+});
+
+$(document).ready(function() {
+  $('.faq__item-title').click(function(event) {
+    if($('.faq__block').hasClass('one')){
+      $('.faq__item-title').not($(this)).removeClass('active');
+      $('.faq__item-text').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
 });
