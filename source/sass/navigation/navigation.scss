@@ -217,6 +217,7 @@
 @media (max-width: $mobile-width) {
   .navigation__block {
     margin-left: 20px;
+    margin-top: 12px;
   }
 
   .navigation__title {
@@ -285,6 +286,22 @@
   .navigation {
     background: none;
     padding-bottom: 79px;
+  }
+
+
+  .navigation__list {
+    border-left: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 217px;
+      top: 33px;
+      left: 5px;
+      border-left: 1px dashed rgba(72, 72, 72, 0.2);
+    }
   }
 
   .navigation__wrapper {

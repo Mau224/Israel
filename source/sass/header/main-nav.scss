@@ -159,16 +159,18 @@
     background: url("../img/main-bg-mob.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 483px;
+    background-size: 100% 615px;
+    background-position-y: 19px;
+    padding-bottom: 106px;
   }
 
   .main-nav__bg-point {
-    top: 108px;
+    top: 235px;
     left: -39px;
   }
 
   .main-nav__bg-text {
-    bottom: -98px;
+    bottom: -203px;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
@@ -186,7 +188,7 @@
     //flex-direction: column;
     padding-top: 90px;
     position: relative;
-    top: -70px;
+    top: -59px;
   }
 
   .main-nav__phone {
@@ -208,6 +210,7 @@
     font-size: 14px;
     line-height: 17px;
     width: 109px;
+    margin-left: 14px;
   }
 
   .disabled-mobail {
@@ -223,5 +226,10 @@
     display: flex;
     flex-direction: column;
     top: -10px;
+  }
+
+  .main-nav__logo {
+    width: 120px;
+    height: 42px;
   }
 }
