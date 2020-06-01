@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
+var concat = require('gulp-concat');
 
 // const tildeImporter = require('node-sass-tilde-importer');
 
@@ -36,6 +37,24 @@ gulp.task("css", function () {
 gulp.task("js", function () {
   return gulp.src(["source/js/*.js"])
     .pipe(gulp.dest("./build/js"))
+    // .pipe(uglify())
+    // .pipe(rename({suffix: ".min"}))
+    // .pipe(gulp.dest("./build/js"));
+});
+
+gulp.task('libs', function () {
+  return gulp.src(["source/lib/*.js"])
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('./build/js'))
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("./build/js"));
+});
+
+gulp.task('scripts', function () {
+  return gulp.src(["source/scripts/_*.js"])
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('./build/js'))
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("./build/js"));
@@ -111,5 +130,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts", "libs"));
 gulp.task("start", gulp.series("build", "server"));

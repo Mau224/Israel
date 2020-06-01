@@ -1,5 +1,3 @@
-'use strict';
-
 $(document).ready(function () {
   $('body').children().each(function() {
     document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
@@ -10,6 +8,17 @@ $(function () {
   $('#phone').mask('+7 (999)9–999–9999');
   $('#tel').mask('+7 (999) 99_____');
 });
+
+$('#name').on('keypress', function() {
+  var that = this;
+
+  setTimeout(function() {
+    var res = /[^а-я ]/g.exec(that.value);
+    console.log(res);
+    that.value = that.value.replace(res, '');
+  }, 0);
+});
+
 
 $('body').on('click', '.tab__navitem', function (event) {
   var eq = $(this).index();

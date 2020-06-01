@@ -8,7 +8,7 @@ $(document).ready(function(){
 		autoplaySpeed: 800,
 		responsive: [
       {
-        breakpoint: 2500,
+        breakpoint: 3500,
         settings: "unslick"
       },
 			{

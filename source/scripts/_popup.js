@@ -1,8 +1,5 @@
-'use strict';
-
-var body = document.querySelector('body');
-
 $(document).ready(function($) {
+  var body = document.querySelector('body');
   $('.popup-open').click(function() {
     $('.popup-fade').fadeIn();
     $('#name').focus();
@@ -33,6 +30,7 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
+  var body = document.querySelector('body');
   $('.modal-open').click(function() {
     $('.modal').fadeIn();
     $('#name').focus();

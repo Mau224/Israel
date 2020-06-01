@@ -9,12 +9,12 @@
 .tabs {
   width: 100%;
   margin: 0 auto;
+  padding-top: 56px;
+  margin-bottom: 50px;
   background: url("../img/sketch_Bg.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-position-y: 20px;
-  padding-top: 56px;
-  margin-bottom: 50px;
 }
 
 .tabs__container {
@@ -54,6 +54,7 @@
 
 .tabs__item {
   margin-left: 64px;
+  margin-top: 5px;
 }
 
 .tabs__title {
@@ -98,7 +99,7 @@
 
 
 .tabs__nav {
-  margin-top: -7px;
+  margin-top: -2px;
 }
 
 .tabs__items {
@@ -159,6 +160,7 @@
     overflow-x: scroll;
     margin: 0;
     margin-bottom: -20px;
+    margin-top: 5px;
   }
 
   .tabs__item {
@@ -167,7 +169,7 @@
 
   .tabs__nav-wrapper {
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: -1px;
   }
 
   .tab__navitem.active {
@@ -178,6 +180,7 @@
 
   .tabs__nav-icon {
     margin-bottom: 10px;
+    fill: rgba(72, 72, 72, 0.87);
   }
 
   .tabs__nav-text {
@@ -199,9 +202,11 @@
   .tabs__navitem {
     margin-bottom: 20px;
     height: auto;
-    padding-top: 11px;
-    padding-right: 12px;
+    padding-top: 6px;
+    padding-right: 9px;
   }
+
+
 
   .tabs {
     background: url("../img/sketch_Bg-mob.png");
@@ -229,10 +234,11 @@
     line-height: 160%;
     font-style: normal;
     font-weight: normal;
-    //max-width: 285px;
+    max-width: 285px;
 
     &--second {
       margin-top: 15px;
+      max-width: 320px;
     }
   }
 
@@ -240,5 +246,9 @@
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 18px;
+  }
+
+  .tabs__items {
+    margin-top: 25px;
   }
 }

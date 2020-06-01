@@ -14,7 +14,7 @@
   align-items: center;
   margin: 0 auto;
   padding-bottom: 83px;
-  margin-bottom: 55px;
+  margin-bottom: 47px;
   margin-top: 37px;
 }
 
@@ -29,7 +29,8 @@
 
 
 .video__title {
-  width: 319px;
+  max-width: 322px;
+  width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;

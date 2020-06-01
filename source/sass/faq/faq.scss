@@ -155,13 +155,13 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   background-position-y: 743px;
-  padding-bottom: 130px;
+  padding-bottom: 123px;
 }
 
 .faq__title {
   margin-bottom: 27px;
-  margin-top: 22px;
-  margin-left: 51px;
+  margin-top: 19px;
+  margin-left: 0;
 }
 
 .faq__img {
@@ -271,7 +271,7 @@
     padding: 0;
     padding-top: 16px;
     padding-left: 30px;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
 
     &--six {
       max-width: 178px;
@@ -300,16 +300,21 @@
     }
 
     &--second {
-      padding-top: 12px;
+      padding-top: 17px;
       padding-bottom: 24px;
     }
 
     &--third {
-      padding-top: 21px;
+      padding-top: 18px;
+      padding-bottom: 24px;
     }
 
     &--five {
       padding-bottom: 20px;
+    }
+
+    &--four {
+      padding-bottom: 25px;
     }
   }
 
