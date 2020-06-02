@@ -45,7 +45,7 @@
   margin-bottom: 51px;
 }
 
-.slider__main-text {
+.slider__text-block p {
   max-width: 720px;
   text-align: right;
   font-size: 17px;
@@ -54,7 +54,7 @@
 }
 
 
-.slider__title {
+.slider__text-block h1 {
   margin-bottom: 23px;
 }
 
@@ -378,7 +378,7 @@
     max-width: 100%;
   }
 
-  .slider__main-text {
+  .slider__text-block p {
     font-size: 16px;
     line-height: 160%;
     text-align: left;
@@ -391,7 +391,7 @@
     margin-bottom: 29px;
   }
 
-  .slider__title {
+  .slider__text-block h1 {
     font-size: 32px;
     line-height: 39px;
     text-align: center;

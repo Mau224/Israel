@@ -14,7 +14,7 @@
   margin-top: 24px;
 }
 
-.gallery__text {
+.gallery__main-block p {
   font-family: "Fira Sans", "Arial", sans-serif;
   color: #ffffff;
   max-width: 384px;
@@ -44,7 +44,7 @@
 }
 
 
-.gallery__title {
+.gallery__main-block h1 {
   margin-bottom: 25px;
 }
 
@@ -92,7 +92,7 @@
     margin: 0 auto;
   }
 
-  .gallery__title {
+  .gallery__main-block h1 {
     font-size: 40px;
     line-height: 49px;
     letter-spacing: -0.02em;
@@ -101,7 +101,7 @@
     margin-bottom: 96px;
   }
 
-  .gallery__text {
+  .gallery__main-block p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

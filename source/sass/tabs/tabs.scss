@@ -24,7 +24,7 @@
   padding: 0 7px;
 }
 
-.tabs__item-text {
+.tabs__items p {
   padding-right: 19px;
   font-family: $fontfamily;
   font-style: normal;
@@ -33,6 +33,7 @@
   line-height: 170%;
   color: rgba(72, 72, 72, 0.87);
   margin-left: -1px;
+  margin-bottom: 19px;
 
   &--second {
     margin-top: 19px;
@@ -40,7 +41,7 @@
   }
 }
 
-.tabs__item-title {
+.tabs__items h2 {
   font-family: $fonttitle;
   font-style: normal;
   font-weight: bold;
@@ -57,7 +58,7 @@
   margin-top: 5px;
 }
 
-.tabs__title {
+.tabs__container h1 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -86,7 +87,7 @@
 }
 
 
-.tabs__nav-text {
+.tab__navitem p {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -118,7 +119,7 @@
   margin-bottom: 3px;
 }
 
-.tab__navitem.active .tabs__nav-text {
+.tab__navitem.active p {
   color: white;
 }
 
@@ -145,7 +146,7 @@
     margin-left: 15px;
   }
 
-  .tabs__title {
+  .tabs__container h1 {
     margin-left: 20px;
   }
 }
@@ -183,7 +184,7 @@
     fill: rgba(72, 72, 72, 0.87);
   }
 
-  .tabs__nav-text {
+  .tabs__navitem p {
     position: relative;
     right: 10px;
     top: -6px;
@@ -195,7 +196,7 @@
     color: rgba(72, 72, 72, 0.87);
   }
 
-  .tabs__nav-text.active {
+  .tabs__navitem p.active {
     right: 13px;
   }
 
@@ -207,7 +208,6 @@
   }
 
 
-
   .tabs {
     background: url("../img/sketch_Bg-mob.png");
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@
     background-position: right;
   }
 
-  .tabs__title {
+  .tabs__container h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -229,7 +229,7 @@
     margin-bottom: 12px;
   }
 
-  .tabs__item-text {
+  .tabs__items p {
     font-size: 14px;
     line-height: 160%;
     font-style: normal;
@@ -242,7 +242,7 @@
     }
   }
 
-  .tabs__item-title {
+  .tabs__items h2 {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 18px;

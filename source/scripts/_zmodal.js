@@ -33,7 +33,6 @@ $(document).ready(function($) {
   var body = document.querySelector('body');
   $('.modal-open').click(function() {
     $('.modal').fadeIn();
-    $('#name').focus();
     body.classList.add('hidden');
     return false;
   });
@@ -52,7 +51,7 @@ $(document).ready(function($) {
     }
   });
 
-  $('.modal').click(function(e) {
+  $('.modal').click(function (e) {
     if ($(e.target).closest('.modal__container').length === 0) {
       $(this).fadeOut();
       body.classList.remove('hidden');

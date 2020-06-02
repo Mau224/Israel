@@ -16,7 +16,7 @@
   padding-top: 24px;
 }
 
-.ride__text {
+.ride__form-block p {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -26,13 +26,13 @@
   margin-bottom: 64px;
 }
 
-.ride__title {
+.ride__form-block h1 {
   margin-bottom: 24px;
   letter-spacing: -0.02em;
 }
 
 
-.ride__input {
+.ride__container input {
   font-family: "Fira Sans", "Arial", sans-serif;
   border: none;
   padding-left: 39px;
@@ -142,7 +142,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .ride__title {
+  .ride__form-block h1 {
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -150,7 +150,7 @@
     text-transform: uppercase;
   }
 
-  .ride__text {
+  .ride__form-block p {
     font-size: 16px;
     line-height: 160%;
     max-width: 286px;
@@ -183,7 +183,7 @@
     }
   }
 
-  .ride__input {
+  .ride__container input {
     border: 2px solid #e3e3e3;
     padding: 20px;
     padding-left: 41px;

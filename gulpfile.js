@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var concat = require('gulp-concat');
+var fileinclude = require("gulp-file-include");
 
 // const tildeImporter = require('node-sass-tilde-importer');
 
@@ -37,9 +38,9 @@ gulp.task("css", function () {
 gulp.task("js", function () {
   return gulp.src(["source/js/*.js"])
     .pipe(gulp.dest("./build/js"))
-    // .pipe(uglify())
-    // .pipe(rename({suffix: ".min"}))
-    // .pipe(gulp.dest("./build/js"));
+  // .pipe(uglify())
+  // .pipe(rename({suffix: ".min"}))
+  // .pipe(gulp.dest("./build/js"));
 });
 
 gulp.task('libs', function () {
@@ -130,5 +131,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts", "libs"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "libs", "scripts"));
 gulp.task("start", gulp.series("build", "server"));
