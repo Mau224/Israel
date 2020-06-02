@@ -10,7 +10,7 @@
 }
 
 .info__wrapper h1 {
-  margin-bottom: 50px;
+  margin-bottom: 19px;
   margin-left: 111px;
 }
 
@@ -40,12 +40,8 @@
 //  margin-left: 20px;
 //}
 
-.info__avatar-stat {
-  color: $blue;
-  margin-right: 8px;
-}
 
-.info__avatar-addr {
+.info__main-block p {
   max-width: 264px;
   font-style: normal;
   font-weight: normal;
@@ -55,10 +51,15 @@
 }
 
 .info__mark-city {
-  margin-right: 17px;
+  margin-right: 15px;
   position: relative;
   color: rgba(72, 72, 72, 0.74);
   border-bottom: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  margin-left: 26px;
 
   &::before {
     content: "";
@@ -66,7 +67,8 @@
     width: 12px;
     height: 18px;
     background: url("../img/marker.svg");
-    left: -15px;
+    left: -19px;
+    top: 0;
     background-repeat: no-repeat;
   }
 }
@@ -105,6 +107,7 @@
 
 .info__main-block {
   display: flex;
+  margin-top: 4px;
 }
 
 .info__icon {
@@ -112,17 +115,32 @@
   margin-right: 6px;
 }
 
-.info__avatar-social {
-  margin-top: 12px;
-  margin-left: -4px;
+.info__avatar-addr {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: rgba(72, 72, 72, 0.74);
+}
+
+.info__main-block img {
+  margin-top: 34px;
+  margin-left: 0px;
+  border-radius: 50%;
+  width: 112px;
+  height: 112px;
 }
 
 
 .info__text-block {
   margin-left: 23px;
   margin-top: 4px;
+  max-width: 264px;
 }
 
+.info__avatar-social {
+  margin-top: 10px;
+}
 
 .info__block-person p {
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -144,24 +162,25 @@
 
 .info__img-block img {
   position: relative;
-  top: -92px;
-  left: 25px;
+  top: -59px;
+  left: 38px;
 }
 
-
-.info__avatar {
-  border-radius: 50%;
-  width: 112px;
-  height: 112px;
+.info__avatar-stat {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  color: $blue;
+  margin-right: 12px;
 }
-
 
 .info__form-container {
   display: flex;
   width: 100%;
   max-width: 1244px;
   margin: 0 auto;
-  margin-top: -29px;
+  margin-top: 5px;
 }
 
 .info__form-block p {
@@ -170,6 +189,7 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 150%;
+  margin-left: 58px;
 }
 
 .info__form-block small {
@@ -183,7 +203,7 @@
   margin-top: 16px;
 }
 
-.info__input {
+.info__form input {
   border-radius: 25px;
   padding: 18px;
   padding-left: 38px;
@@ -235,11 +255,16 @@ input:invalid:not(:placeholder-shown) {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-
-.info__form-block {
-  margin-left: 50px;
+.info__form-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: rgba(72, 72, 72, 0.5);
+  width: 364px;
+  margin-left: 58px;
+  margin-top: 14px;
 }
-
 
 .info {
   background: url("../img/watercolor_Bg6.png");
@@ -251,7 +276,8 @@ input:invalid:not(:placeholder-shown) {
 
 .info__form {
   width: 100%;
-  margin-left: 24px;
+  margin-left: 12px;
+  margin-top: -2px;
 }
 
 @media (max-width: 1280px) {
@@ -265,6 +291,7 @@ input:invalid:not(:placeholder-shown) {
 
   .info__form-block p {
     max-width: 250px;
+    margin-left: 0;
   }
 
   .info__form-block small {
@@ -276,11 +303,12 @@ input:invalid:not(:placeholder-shown) {
   }
 
   .info__form {
-    margin-left: 10px;
+    margin-left: 0;
   }
 
-  .info__input {
+  .info__form input {
     margin-right: 0;
+    width: 170px;
   }
 
   .info__block-person {
@@ -289,6 +317,10 @@ input:invalid:not(:placeholder-shown) {
 
   .info__block-person p {
     margin-bottom: 30px;
+  }
+
+  .info__form-text {
+    margin-left: 0;
   }
 }
 
@@ -339,14 +371,25 @@ input:invalid:not(:placeholder-shown) {
     text-align: center;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
+    margin-top: 62px;
   }
 
   .info__img-block img {
     width: auto;
     height: auto;
     left: 0;
-    top: -24px;
+    top: 47px;
+    margin-bottom: 67px;
+    max-width: 320px;
+  }
+
+  .info__img-block::before {
+    width: 26px;
+    height: 40px;
+    background-size: 26px 40px;
+    top: 253px;
+    left: 82%;
   }
 
   .info__block-person p {
@@ -357,33 +400,38 @@ input:invalid:not(:placeholder-shown) {
     line-height: 160%;
     max-width: 240px;
     width: 100%;
-    margin-top: 32px;
-    margin-left: -48px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 1px;
   }
 
   .info__main-block {
     flex-direction: column;
   }
 
-  .info__avatar {
+  .info__main-block img {
     width: 112px;
     height: 112px;
     margin-bottom: 13px;
     position: relative;
-    left: -18px;
+    left: -5px;
   }
 
-  .info__text-block p {
-    margin-left: -38px;
+
+  .info__avatar-stat {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    margin-left: -4px;
+    margin-right: 6px;
   }
 
   .info__avatar-addr {
-    max-width: 274px;
-    margin-left: -39px;
-  }
-
-  .info__block-person p {
-    margin-left: -59px;
+    margin-left: -4px;
+    text-align: left;
+    position: relative;
+    top: 6px;
   }
 
   .info__block-person {
@@ -405,6 +453,7 @@ input:invalid:not(:placeholder-shown) {
     line-height: 150%;
     max-width: 288px;
     width: 100%;
+    margin-left: -1px;
   }
 
   .info__form-block small {
@@ -416,7 +465,29 @@ input:invalid:not(:placeholder-shown) {
     width: 100%;
   }
 
-  .info__input {
+  .info__form-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    width: 287px;
+    margin-left: -3px;
+  }
+
+  .info__avatar-social {
+    left: -7px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  .info__main-text {
+    position: relative;
+    left: -24px;
+    width: 288px;
+  }
+
+  .info__form input {
     width: 246px;
     margin: 0 auto;
     margin-top: 8px;
@@ -437,11 +508,12 @@ input:invalid:not(:placeholder-shown) {
     flex-direction: column;
     align-items: center;
     margin-left: 0;
+    margin-top: 5px;
   }
 
   .info__btn-sub {
     width: 264px;
-    margin-top: 28px;
+    margin-top: 31px;
     padding-bottom: 21px;
   }
 
@@ -450,12 +522,17 @@ input:invalid:not(:placeholder-shown) {
     padding-bottom: 64px;
   }
 
-  .info__avatar-social {
-    margin-left: -38px;
+  .info__mark-city {
+    margin-left: -3px;
   }
 
   .info__form-container {
     margin-top: -3px;
+  }
+
+  .info__text-block {
+    margin-left: 0;
+    max-width: 280px;
   }
 
   //.info__span {

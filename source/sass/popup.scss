@@ -16,8 +16,8 @@
 
 .popup {
   position: fixed;
-  top: 19%;
-  left: 46%;
+  top: 15%;
+  left: 46.5%;
   width: 442px;
   margin-left: -186px;
   background: #ffffff;
@@ -46,14 +46,14 @@
     height: 2px;
     transform: rotate(45deg);
     background: $gradient;
-    top: 12px;
+    top: 18px;
     right: 2px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 18px;
     right: 2px;
     width: 23px;
     height: 2px;
@@ -68,7 +68,7 @@
   margin-right: -6px;
 }
 
-.popup__input {
+.popup__block input {
   font-family: $fontfamily;
   font-style: normal;
   font-weight: normal;
@@ -127,7 +127,7 @@
   margin-top: 5px;
 }
 
-.popup__info {
+.popup p {
   width: 359px;
   text-align: left;
   margin-right: 44px;
@@ -141,18 +141,18 @@
   color: rgba(72, 72, 72, 0.87);
 }
 
-.popup__title {
+.popup h2 {
   font-family: $fonttitle;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 140.62%;
-  margin-top: 30px;
+  margin-top: 34px;
   letter-spacing: -0.02em;
   margin-right: 168px;
 }
 
-.popup__checkbox-text {
+.popup__submit-block p {
   width: 254px;
   font-family: $fontfamily;
   font-style: normal;
@@ -161,8 +161,9 @@
   line-height: 150%;
   color: $black;
   opacity: 0.8;
-  margin-top: -2px;
+  margin-top: 3px;
   margin-right: 8px;
+  margin-bottom: 0;
 }
 
 .popup__bottom-margin {
@@ -236,7 +237,7 @@ input[type=text], input[type=submit], textarea{
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 20px 9px 30px 30px;
+    padding: 1px 9px 30px 30px;
   }
 
   .popup-fade::before {
@@ -251,15 +252,15 @@ input[type=text], input[type=submit], textarea{
     z-index: 9999;
   }
 
-  .popup__title {
+  .popup h2 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     letter-spacing: -0.02em;
     margin-right: 0;
-    margin-left: 19px;
-    margin-top: 24px;
+    margin-left: 25px;
+    margin-top: 15px;
   }
 
   .popup-close {
@@ -267,28 +268,49 @@ input[type=text], input[type=submit], textarea{
     right: 21px;
   }
 
-  .popup__info {
+  .popup p {
+    font-family: $fontfamily;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
     line-height: 160%;
-    margin-left: 54px;
+    margin-left: 96px;
     text-align: center;
-    width: 258px;
+    width: 283px;
   }
 
-  .popup__input {
+  .popup__block input {
     width: 245px;
     padding-left: 38px;
     margin-bottom: 9px;
-    margin-left: 33px;
+    margin-left: 51px;
   }
 
   .popup__submit {
     padding: 22px 25px;
     margin-top: 13px;
-    margin-left: 45px;
+    margin-left: 62px;
   }
 
-  .popup__checkbox-text {
-    margin-right: -28px;
+  .popup__submit-block p {
+    margin-right: -38px;
+    margin-top: -2px;
+    margin-left: -3px;
+    width: 249px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: left;
+  }
+
+  .popup-close::before {
+    top: -14px;
+    right: -5px;
+  }
+
+  .popup-close::after {
+    top: -13px;
+    right: -5px;
   }
 }

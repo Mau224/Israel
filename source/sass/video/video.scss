@@ -15,7 +15,7 @@
   margin: 0 auto;
   padding-bottom: 83px;
   margin-bottom: 47px;
-  margin-top: 37px;
+  margin-top: 33px;
 }
 
 .video__container {
@@ -35,7 +35,7 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 49px;
-
+  margin-left: 13px;
 
   text-align: center;
   letter-spacing: -0.02em;
@@ -47,7 +47,7 @@
 
 
 .video__container p {
-  width: 720px;
+  width: 688px;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -56,6 +56,7 @@
   color: $black;
   text-align: center;
   margin-bottom: 48px;
+  margin-left: 25px;
 }
 
 .video__img-block {
@@ -105,6 +106,7 @@
     font-size: 16px;
     line-height: 160%;
     text-align: left;
+    margin-left: 0;
   }
 
   .video__wrapper h1 {
@@ -112,6 +114,7 @@
     line-height: 39px;
     text-align: center;
     letter-spacing: -0.02em;
+    margin-left: 0;
   }
 
   .video__img-block {

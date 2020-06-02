@@ -17,6 +17,7 @@
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 203px;
+  background-size: 190px 248px;
 }
 
 
@@ -61,7 +62,7 @@
   margin-bottom: 37px;
 }
 
-.navigation__block b {
+.navigation__text b {
   width: 100%;
   max-width: 446px;
   font-style: normal;
@@ -86,7 +87,7 @@
   width: 100%;
   max-width: 588px;
   height: 100%;
-  margin-left: -56px;
+  margin-left: -47px;
   margin-top: -10px;
 }
 
@@ -94,9 +95,12 @@
   width: 100%;
   max-width: 540px;
   margin-top: 22px;
-  margin-right: 62px;
+  margin-right: 55px;
 }
 
+.navigation__text {
+  max-width: 455px;
+}
 
 .navigation__item {
   position: relative;
@@ -301,7 +305,7 @@
     }
   }
 
-  .navigation__block b {
+  .navigation__text b {
     font-family: $fontfamily;
     font-size: 16px;
     line-height: 160%;
@@ -311,7 +315,7 @@
 
   .navigation {
     background: none;
-    padding-bottom: 79px;
+    padding-bottom: 54px;
   }
 
 

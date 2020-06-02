@@ -16,8 +16,8 @@
 
 .modal__container {
   position: fixed;
-  top: 13%;
-  left: 46%;
+  top: 15%;
+  left: 46.5%;
   width: 451px;
   margin-left: -186px;
   background: #ffffff;
@@ -47,14 +47,14 @@
     height: 2px;
     transform: rotate(45deg);
     background: $gradient;
-    top: 12px;
+    top: 17px;
     right: 2px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 17px;
     right: 2px;
     width: 23px;
     height: 2px;
@@ -63,7 +63,7 @@
   }
 }
 
-.modal__img {
+.modal__container img {
   position: relative;
   top: -10px;
 }
@@ -86,11 +86,11 @@
   margin-right: 26px;
   cursor: pointer;
   margin-bottom: 16px;
-  margin-top: 32px;
+  margin-top: 37px;
 }
 
 
-.modal__info {
+.modal__container p {
   width: 308px;
 
   margin-right: 53px;
@@ -110,7 +110,7 @@
 }
 
 
-.modal__title {
+.modal__container h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -135,12 +135,16 @@ body.modal {
     right: 141px;
   }
 
-  .modal__img {
+  .modal__container img {
     top: -40px;
     right: 38px;
   }
 
-  .modal__title {
+  .modal__container {
+    padding: 120px 16px 94px 14px;
+  }
+
+  .modal__container h2 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -152,7 +156,7 @@ body.modal {
     margin-right: 0;
   }
 
-  .modal__info {
+  .modal__container p {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -164,5 +168,6 @@ body.modal {
 
   .modal__btn {
     margin-left: -57px;
+    margin-top: 32px;
   }
 }

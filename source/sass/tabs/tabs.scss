@@ -14,7 +14,8 @@
   background: url("../img/sketch_Bg.png");
   background-repeat: no-repeat;
   background-position: top right;
-  background-position-y: 20px;
+  background-position-y: 24px;
+  background-position-x: 688px;
 }
 
 .tabs__container {
@@ -34,11 +35,11 @@
   color: rgba(72, 72, 72, 0.87);
   margin-left: -1px;
   margin-bottom: 19px;
+  max-width: 550px;
+}
 
-  &--second {
-    margin-top: 19px;
-    max-width: 505px;
-  }
+.tabs__item-text {
+  max-width: 525px;
 }
 
 .tabs__items h2 {
@@ -68,7 +69,8 @@
   text-transform: uppercase;
   /* identical to box height */
   margin-bottom: 66px;
-  margin-top: 13px;
+  margin-top: 16px;
+  margin-left: 5px;
 }
 
 .tabs__block {
@@ -82,16 +84,16 @@
 .tabs__nav-icon {
   fill: #000000;
   margin-right: 21px;
-  margin-left: 20px;
+  margin-left: 28px;
   //margin-bottom: 20px;
 }
 
 
 .tab__navitem p {
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
   font-variant: small-caps;
   color: $black;
   cursor: pointer;
@@ -131,8 +133,8 @@
   background: url("../img/bg-tab.svg");
   background-repeat: no-repeat;
   background-position-y: 1px;
-  background-position-x: -8px;
-  width: 228px;
+  background-position-x: 3px;
+  width: 235px;
 }
 
 
@@ -166,6 +168,8 @@
 
   .tabs__item {
     margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tabs__nav-wrapper {
@@ -177,11 +181,14 @@
     background: $gradient;
     border-radius: 50px;
     margin-right: -7px;
+    width: 320px;
   }
 
   .tabs__nav-icon {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     fill: rgba(72, 72, 72, 0.87);
+    margin-left: 21px;
+    width: 100%;
   }
 
   .tabs__navitem p {
@@ -205,6 +212,7 @@
     height: auto;
     padding-top: 6px;
     padding-right: 9px;
+    width: 320px;
   }
 
 
@@ -214,6 +222,7 @@
     background-position-y: 123px;
     /* background-position-x: 66px; */
     background-position: right;
+    margin-bottom: 30px;
   }
 
   .tabs__container h1 {
@@ -229,12 +238,14 @@
     margin-bottom: 12px;
   }
 
+
   .tabs__items p {
     font-size: 14px;
     line-height: 160%;
     font-style: normal;
     font-weight: normal;
     max-width: 285px;
+    margin-bottom: 15px;
 
     &--second {
       margin-top: 15px;

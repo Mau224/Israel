@@ -12,6 +12,7 @@
   background-size: 100% 906px;
   //background-position: top;
   //background-position-y: -4px;
+  background-position-x: 10px;
   z-index: 2;
 
   &::before {
@@ -27,7 +28,7 @@
 
 .main-nav__container {
   width: 100%;
-  max-width: 1132px;
+  max-width: 1152px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,8 +40,8 @@
   z-index: 50;
 }
 
-.main-nav__logo {
-  margin-right: 25px;
+.main-nav__container img {
+  margin-right: 23px;
   width: 137px;
   height: 48px;
 }
@@ -94,7 +95,7 @@
   width: 343px;
   position: relative;
   bottom: -458px;
-  left: 1px;
+  left: 9px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -112,7 +113,7 @@
 .main-nav__bg-point {
   position: absolute;
   top: 488px;
-  left: -38px;
+  left: -28px;
 }
 
 .main-nav__feedback {
@@ -134,7 +135,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
-  margin-left: -5px;
+  margin-left: 13px;
 }
 
 .disabled-mobail {
@@ -200,10 +201,11 @@
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 7px;
-    margin-left: 9px;
+    position: relative;
+    left: -2px;
   }
 
-  .main-nav__logo {
+  .main-nav__container img {
     //margin-right: 175px;
     margin-top: -20px;
     width: 120px;
@@ -217,7 +219,8 @@
     font-size: 14px;
     line-height: 17px;
     width: 109px;
-    margin-left: 29px;
+    position: relative;
+    left: 29px;
   }
 
   .disabled-mobail {
