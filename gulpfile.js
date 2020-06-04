@@ -48,7 +48,7 @@ gulp.task('libs', function () {
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./build/js'))
     .pipe(uglify())
-    .pipe(rename({suffix: ".min"}))
+    // .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("./build/js"));
 });
 
@@ -57,7 +57,6 @@ gulp.task('scripts', function () {
     .pipe(concat('main.js'))
     .pipe(gulp.dest('./build/js'))
     .pipe(uglify())
-    .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("./build/js"));
 });
 
