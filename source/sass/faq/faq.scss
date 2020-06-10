@@ -6,7 +6,7 @@
 
 
 .faq {
-  background: url("../img/watercolor_Bg4.png");
+  background: url("../img/watercolor_Bg4.jpg");
   background-repeat: no-repeat;
   //background-position-x: 230px;
 }
@@ -106,7 +106,7 @@
   }
 
   &--five::before {
-    right: -43px;
+    right: -42px;
     top: 30px;
   }
 
@@ -233,7 +233,7 @@
 
 @media (max-width: $mobile-width) {
   .faq__block h1 {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
     margin-top: 18px;
     font-size: 32px;
     line-height: 39px;
@@ -288,13 +288,13 @@
     }
 
     &--second::before {
-      right: -35px;
-      top: 23px;
+      right: -34px;
+      top: 31px;
     }
 
     &--second::after {
       right: -26px;
-      top: 23px;
+      top: 31px;
     }
 
     &--second {
@@ -332,7 +332,7 @@
   }
 
   .faq__block-item::before {
-    top: -2px;
+    top: 3px;
     left: 7px;
   }
 
@@ -348,6 +348,10 @@
 
   .faq__wrapper {
     background-position-y: 676px;
-    padding-bottom: 73px;
+    padding-bottom: 77px;
+  }
+
+  .faq__img-block img {
+    display: none;
   }
 }

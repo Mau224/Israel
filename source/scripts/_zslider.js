@@ -60,7 +60,6 @@ $(document).ready(function () {
     autoplay: false,
     speed: 10,
     autoplaySpeed: 800,
-    swipe: false,
     initialSlide: 2,
     prevArrow: '.reviews__navigation-left',
     nextArrow: '.reviews__navigation-right'

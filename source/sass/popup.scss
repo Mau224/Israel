@@ -175,13 +175,13 @@
 }
 
 .popup__label {
-  cursor: default;
   font-weight: normal;
   line-height: 30px;
   padding: 10px 0;
   padding-top: 5px;
   margin-bottom: 20px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .popup__label::before {
@@ -195,6 +195,7 @@
   border: 2px solid $yellow;
   //border-image: $gradient;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .popup__checkbox:checked + .popup__label::before {

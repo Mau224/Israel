@@ -35,12 +35,17 @@
 
 
 .ride__container input {
-  font-family: "Fira Sans", "Arial", sans-serif;
   border: none;
   padding-left: 39px;
   border-radius: 50px;
   padding-top: 7px;
   outline: none;
+  font-family: $fontfamily;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
 
   &::placeholder {
     font-style: normal;
@@ -62,7 +67,7 @@
 .ride__container {
   display: flex;
   justify-content: space-between;
-  border: 2px solid #E3E3E3;
+  border: 2px solid #e3e3e3;
   border-radius: 50px;
   position: relative;
   z-index: 19;
@@ -109,7 +114,7 @@
   width: 818px;
   height: 594px;
   margin-top: -20px;
-  background: url("../img/girl-flag-bg.png");
+  background: url("../img/girl-flag-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: -42px;
@@ -141,6 +146,7 @@
 
   .ride__wrapper {
     max-width: 1023px;
+    height: 340px;
   }
 }
 
@@ -171,6 +177,7 @@
 
   .ride__wrapper {
     padding: 0;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,22 +196,22 @@
   .ride__container input {
     border: 2px solid #e3e3e3;
     padding: 20px;
-    padding-left: 41px;
-    padding-top: 22px;
+    padding-left: 42px;
+    padding-top: 16px;
     margin-left: -20px;
     width: 100%;
     max-width: 220px;
   }
 
   .ride__submit {
-    width: 269px;
+    width: 263px;
     padding-bottom: 21px;
-    margin-top: 6px;
-    margin-left: -10px;
+    margin-top: 8px;
+    margin-left: -11px;
   }
 
   .ride {
-    padding-top: 39px;
+    padding-top: 35px;
     margin-bottom: 44px;
     background: url("../img/backpack-mob.png");
     background-repeat: no-repeat;

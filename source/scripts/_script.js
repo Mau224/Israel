@@ -5,8 +5,9 @@ $(document).ready(function () {
 })
 
 $(function () {
-  $('#phone').mask('+7 (999)9–999–9999');
-  $('#tel').mask('+7 (999) 99_____');
+  $('#phone').mask('+7 (999)9–999–9999'), {placeholder: "+7(___)___-__-__"};
+  $('#tell').mask('+7 (999)9–999–9999') , {placeholder: "+7(___)___-__-__"};
+  $('#tel').mask('+7 (999)9–999–9999') , {placeholder: "+7(___)___-__-__"};
 });
 
 $('#name').on('keypress', function() {

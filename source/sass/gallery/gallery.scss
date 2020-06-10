@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1366px;
   height: 700px;
-  background: url("../img/bg-masai.png");
+  background: url("../img/bg-masai-compressor.jpg");
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
@@ -68,6 +68,10 @@
   font-variant: small-caps;
   justify-content: center;
   margin-left: 15px;
+
+  &:hover {
+    color: #000000;
+  }
 }
 
 
@@ -83,7 +87,6 @@
     background-position: center;
     background-size: contain;
     height: auto;
-    margin-top: 20px;
     margin-bottom: 85px;
     justify-content: center;
     align-items: center;
@@ -100,7 +103,7 @@
     line-height: 49px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    padding-left: 15px;
+    padding-left: 18px;
     margin-bottom: 96px;
     margin-left: 0;
   }
@@ -132,11 +135,11 @@
     justify-content: center;
     margin: 0 auto;
     position: relative;
-    top: 23px;
+    top: 25px;
     left: 7px;
   }
 
   .gallery {
-    margin-top: 13px;
+    margin-top: 17px;
   }
 }
