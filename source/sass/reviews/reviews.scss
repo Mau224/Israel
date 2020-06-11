@@ -8,7 +8,7 @@
 }
 
 .reviews {
-  background: url("../img/watercolor_bg5.png");
+  background: url("../img/watercolor_bg5.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: -40px;
@@ -72,6 +72,7 @@
   position: relative;
   margin-top: 49px;
   z-index: 10000;
+  width: 220px;
 }
 
 .reviews__navigation-item {
@@ -122,6 +123,10 @@
   transform: rotate(48deg);
   right: 0;
   top: 12px;
+
+  &:hover {
+    background-color: red;
+  }
 }
 
 .reviews__navigation-left::after {
@@ -177,8 +182,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  top: -24px;
-  left: -86px;
+  top: -21px;
+  left: -89px;
 }
 
 .reviews__block-wrapper {
@@ -190,7 +195,7 @@
 
 .reviews__icon {
   fill: rgba(72, 72, 72, 0.2);
-  margin-right: 18px;
+  margin-right: 15px;
 
   &:hover {
     fill: #000000;
@@ -282,6 +287,14 @@
 //  padding: 0px 15px;
 //}
 
+.reviews__item-date {
+  font-family: $fontfamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  margin-left: 2px;
+}
 
 @media (max-width: $tablet-width) {
   .reviews__slider-item img {
@@ -325,6 +338,7 @@
     margin-bottom: 22px;
     margin-top: -7px;
     margin-left: -14px;
+    width: auto;
   }
 
   .reviews__slider {
@@ -378,6 +392,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 160%;
+    margin-left: 0;
   }
 
   .reviews {

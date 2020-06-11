@@ -327,6 +327,7 @@ input:invalid:not(:placeholder-shown) {
 
   .info__block-person p {
     margin-bottom: 30px;
+    font-size: 16px;
   }
 
   .info__form-text {
@@ -372,6 +373,10 @@ input:invalid:not(:placeholder-shown) {
 
   .info__img-block img {
     width: 500px;
+  }
+
+  .info__form-text {
+    margin-top: 0;
   }
 }
 
@@ -485,6 +490,7 @@ input:invalid:not(:placeholder-shown) {
     line-height: 150%;
     width: 287px;
     margin-left: -3px;
+    margin-top: 13px;
   }
 
   .info__avatar-social {

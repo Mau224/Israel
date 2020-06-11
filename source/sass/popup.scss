@@ -200,8 +200,8 @@
 
 .popup__checkbox:checked + .popup__label::before {
   content: "";
-  height: 16px;
-  width: 16px;
+  height: 13px;
+  width: 13px;
   background: url("../img/bird.svg");
   background-repeat: no-repeat;
   background-size: 17px 10px;

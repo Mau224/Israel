@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/FiraSans-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font" crossorigin="anonymous">
@@ -17,13 +17,15 @@
   <div class="main-nav lazy">
     <div class="main-nav__container">
       <a href="tel:+(972)2–621–6581" class="main-nav__phone link-disabled">+ (972) 2 – 621 – 6581</a>
-      <picture>
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
-        <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mob.webp 1x, img/logo-mob@2x.webp 2x">
+      <a href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mob.webp 1x, img/logo-mob@2x.webp 2x">
 
-        <source media="(max-width: 767px)" srcset="img/logo-mob.png 1x, img/logo-mob@2x.png 2x">
-        <a><img src="img/logo.png" srcset="img/logo@2x.png" width="137" height="48" alt="logo"></a>
-      </picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mob.png 1x, img/logo-mob@2x.png 2x">
+          <img src="img/logo.png" srcset="img/logo@2x.png" width="137" height="48" alt="logo">
+        </picture>
+      </a>
       <div class="main-nav__links-block">
         <a href="tel:+(972)2–621–6581" class="main-nav__phone disabled-mobail">+ (972) 2 – 621 – 6581</a>
         <a href="#" class="main-nav__feedback popup-open">заказать звонок</a>
@@ -44,7 +46,16 @@
       <h1>О программе</h1>
       <div class="video__container">
         <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
-        <div class="video__img-block"></div>
+        <div class="video__img-block lazy">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/video.webp 1x, img/video@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/video-bg-mob.webp 1x, img/video-bg-mob@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/video-bg-mob.png 1x, img/video-bg-mob@2x.png 2x">
+            <img loading="lazy" src="img/video.png" srcset="img/video@2x.png" width="870" height="460" alt="video">
+          </picture>
+        </div>
       </div>
     </div>
   </section>
@@ -125,7 +136,7 @@
         <div class="navigation__img-block">
           <picture>
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/nav-img.webp 1x, img/nav-img@2x.webp 2x">
-            <img src="img/nav-img.png" srcset="img/nav-img@2x.png" width="581" height="707" alt="nav">
+            <img loading="lazy" src="img/nav-img.png" srcset="img/nav-img@2x.png" width="581" height="707" alt="nav">
           </picture>
         </div>
         <div class="navigation__block">
@@ -163,7 +174,8 @@
                     srcset="img/1img-mob.webp 1x, img/1img-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/1img-mob.png 1x, img/1img-mob@2x.png 2x">
-            <img class="slider__img slider__img--first"  src="img/1img.png" srcset="img/1img@2x.png" width="482" height="732"
+            <img loading="lazy" class="slider__img slider__img--first"  src="img/1img.png" srcset="img/1img@2x.png" width="482"
+                  height="732"
                  alt="1">
           </picture>
           <div class="slider__text">Экскурсии по Израилю  <span class="slider__text-span"></span>и знакомство с его
@@ -176,7 +188,8 @@
                     srcset="img/2img-mob.webp 1x, img/2img-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/2img-mob.png 1x, img/2img-mob@2x.png 2x">
-            <img class="slider__img slider__img--small"  src="img/2img.png" srcset="img/2img@2x.png" width="211" height="318"
+            <img loading="lazy" class="slider__img slider__img--small"  src="img/2img.png" srcset="img/2img@2x.png" width="211"
+                  height="318"
                  alt="2">
           </picture>
           <div class="slider__text slider__text--small">Изучение иврита</div>
@@ -187,7 +200,8 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/4img-mob.webp 1x, img/4img-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/4img-mob.png 1x, img/4img-mob@2x.png 2x">
-            <img class="slider__img slider__img--tab-mr"  src="img/4img.png" srcset="img/4img@2x.png" width="411" height="318"
+            <img loading="lazy" class="slider__img slider__img--tab-mr"  src="img/4img.png" srcset="img/4img@2x.png" width="411"
+                  height="318"
                  alt="3">
           </picture>
           <div class="slider__text slider__text--third">Совместные творческие проекты с израильской молодёжью</div>
@@ -199,7 +213,8 @@
                     srcset="img/3img-mob.webp 1x, img/3img-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/3img-mob.png 1x, img/3img-mob@2x.png 2x">
-            <img class="slider__img slider__img--four"  src="img/3img.png" srcset="img/3img@2x.png" width="411" height="318"
+            <img loading="lazy" class="slider__img slider__img--four"  src="img/3img.png" srcset="img/3img@2x.png" width="411"
+                  height="318"
                  alt="4">
           </picture>
           <div class="slider__text slider__text--four">Обучение современным навыкам и профессиям</div>
@@ -210,7 +225,8 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/5img-mob.webp 1x, img/5img-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/5img-mob.png 1x, img/5img-mob@2x.png 2x">
-            <img class="slider__img slider__img--small"  src="img/5img.png" srcset="img/5img@2x.png" width="214" height="318"
+            <img loading="lazy" class="slider__img slider__img--small"  src="img/5img.png" srcset="img/5img@2x.png" width="214"
+                  height="318"
                  alt="5">
           </picture>
           <div class="slider__text slider__text--small slider__text--last">Развитие лидерства</div>
@@ -276,7 +292,8 @@
         <div class="faq__img-block">
           <picture>
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/faq-img.webp 1x, img/faq-img@2x.webp 2x">
-            <img src="img/faq-img.png" srcset="img/faq-img@2x.png" width="645" height="803" alt="text">
+            <img loading="lazy" src="img/faq-img.png" srcset="img/faq-img@2x.png" width="645" height="803"
+                 alt="text">
           </picture>
         </div>
       </div>
@@ -292,7 +309,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/rev-mob.webp 1x, img/rev-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/rev-mob.png 1x, img/rev-mob@2x.png 2x">
-            <img src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
+            <img loading="lazy" src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
           </picture>
           <div class="reviews__item-block">
             <div class="reviews__block-wrapper">
@@ -327,7 +344,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/rev-mob.webp 1x, img/rev-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/rev-mob.png 1x, img/rev-mob@2x.png 2x">
-            <img src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
+            <img loading="lazy" src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
           </picture>
           <div class="reviews__item-block">
             <div class="reviews__block-wrapper">
@@ -362,7 +379,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/rev-mob.webp 1x, img/rev-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/rev-mob.png 1x, img/rev-mob@2x.png 2x">
-            <img src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
+            <img loading="lazy" src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
           </picture>
           <div class="reviews__item-block">
             <div class="reviews__block-wrapper">
@@ -398,7 +415,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/rev-mob.webp 1x, img/rev-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/rev-mob.png 1x, img/rev-mob@2x.png 2x">
-            <img src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
+            <img loading="lazy" src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
           </picture>
           <div class="reviews__item-block">
             <div class="reviews__block-wrapper">
@@ -433,7 +450,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/rev-mob.webp 1x, img/rev-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/rev-mob.png 1x, img/rev-mob@2x.png 2x">
-            <img src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
+            <img loading="lazy" src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
           </picture>
           <div class="reviews__item-block">
             <div class="reviews__block-wrapper">
@@ -468,7 +485,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/rev-mob.webp 1x, img/rev-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/rev-mob.png 1x, img/rev-mob@2x.png 2x">
-            <img src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
+            <img loading="lazy" src="img/rev-img.png" srcset="img/rev-img@2x.png" width="364" height="480" alt="avatar">
           </picture>
           <div class="reviews__item-block">
             <div class="reviews__block-wrapper">
@@ -507,7 +524,7 @@
         <div class="info__block-person">
           <p><span class="info__mark-city">Ваш город</span><span class="info__name-city"> новосибирск</span></p>
           <div class="info__main-block">
-            <img src="img/inf-avatar.png" width="112" height="112" alt="fff">
+            <img loading="lazy" src="img/inf-avatar.png" width="112" height="112" alt="fff">
             <div class="info__text-block">
               <p><span class="info__avatar-stat">Ваш куратор:</span>Анна Горелик</p>
               <a href="#" class="info__avatar-addr">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</a>
@@ -530,7 +547,7 @@
             <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mob.webp 1x, img/map-mob@2x.webp 2x">
 
             <source media="(max-width: 767px)" srcset="img/map-mob.png 1x, img/map-mob@2x.png 2x">
-            <img src="img/map.png" srcset="img/map@2x.png" width="702" height="448" alt="fff">
+            <img loading="lazy" src="img/map.png" srcset="img/map@2x.png" width="702" height="448" alt="fff">
           </picture>
         </div>
       </div>
@@ -557,11 +574,11 @@
     <a href="#" class="footer__logo"><img src="img/masa-bw.png" width="85" height="27" alt="logo"></a>
     <p>Copyright someDesignCompany ©2019</p>
     <div class="footer__social">
-      <a href="#" aria-label="link" class="footer__link"><svg class="footer__icon" width="24" height="24"><use
+      <a href="#" aria-label="link" class="footer__link"><svg class="footer__icon"><use
         xlink:href="img/sprite.svg#icon-facebook"></use></svg></a>
-      <a href="#" aria-label="link" class="footer__link"><svg class="footer__icon" width="24" height="24"><use
+      <a href="#" aria-label="link" class="footer__link"><svg class="footer__icon"><use
         xlink:href="img/sprite.svg#icon-twitter"></use></svg></a>
-      <a href="#" aria-label="link" class="footer__link"><svg class="footer__icon" width="24" height="24"><use
+      <a href="#" aria-label="link" class="footer__link"><svg class="footer__icon"><use
         xlink:href="img/sprite.svg#icon-inst"></use></svg></a>
     </div>
   </div>
@@ -592,7 +609,7 @@
 <div class="modal">
   <div class="modal__container">
     <a class="modal__close close" href="#"></a>
-    <img src="img/ok-mark.png" width="71" height="64" alt="check">
+    <img loading="lazy" src="img/ok-mark.png" width="71" height="64" alt="check">
     <h2>Заявка принята</h2>
     <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
     <button class="modal__btn close">Понятно</button>
